@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700')
+$accent: #009dda
+$accent2: #fff200
+*
+  font-family: 'Lato', sans-serif
+body
+  min-width: 320px
+
+.menu
+  position: fixed
+  z-index: 1000
+  width: 100%
+  background-color: #fff
+  min-height: 70px
+  #logo
+    text-transform: uppercase
+    font-size: 24px
+    color: #503392
+    text-decoration: none
+    span
+      color: $accent
+
+
+.dropdown:hover>.dropdown-menu
+  display: block
+.navbar-nav .dropdown-menu
+  background-color: rgba(0,0,0,.65)
+  border-top: 3px solid $accent2
+  a
+    color: white!important
+    &:hover,
+    &:focus
+      background: none
+      outline: none
+      background: none
+      font-weight: 300
+      &:before
+        content: '\00BB '
+        font-size: 15px
+    &:hover
+      color: $accent2 !important
+    &:before
+      content: '\203A  '
+      font-size: 15px
+      color: $accent2
+  &:nth-child(4)
+    position: absolute
+    margin-left: 178px
+    margin-top: -50px
+
+
+.navbar-light .navbar-nav .nav-link
+  color: black
+.activee
+  a
+    font-weight: 700
+    color: $accent !important
+
+.navbar
+  padding: 0.7rem 1rem
+.search
+  width: 180px
+  background-color: #e8e4f1
+  height: 30px
+  margin-top: 6px
+  i
+    float: right
+    line-height: 30px
+    margin-right: 25px
+  input
+    width: 70%
+    height: 30px
+    background-color: rgba(0,0,0,0)
+    border: none
+    outline: none
+    padding-left: 10px
+
+    /***************END HEADER STYLE *****************/
+.banner
+  img
+    height: 790px
+  h1
+    text-align: center
+    padding-top: 300px
+    font-size: 44px
+    font-weight: 700
+    text-transform: uppercase
+    color: white
+    span
+      color: $accent2
+  p
+    padding-bottom: 340px
+    font-size: 12px
+    font-weight: 500
+    text-align: center
+    color: white
+.carousel-bg
+  background-image: url(../img/img.jpg)
+  -webkit-background-size: cover
+  background-size: cover
+.bgImg
+  background-image: -moz-linear-gradient( 161deg, rgb(80,51,146) 0%, rgb(92,55,165) 24%, rgb(103,58,183) 49%, rgb(0,191,243) 100%)
+  background-image: -webkit-linear-gradient( 161deg, rgb(80,51,146) 0%, rgb(92,55,165) 24%, rgb(103,58,183) 49%, rgb(0,191,243) 100%)
+  background-image: -ms-linear-gradient( 161deg, rgb(80,51,146) 0%, rgb(92,55,165) 24%, rgb(103,58,183) 49%, rgb(0,191,243) 100%)
+  opacity: 0.8
+
+.carousel-indicators li
+  width: 7px
+  height: 7px
+  border-radius: 50%
+  margin-bottom: 20px
+.prev
+  background-color: rgba(255,255,255,0.5)
+  padding: 25px 30px
+  color: white
+
+/***************END BANNER STYLE *****************/
+.choose
+  padding: 115px 0
+  p
+  &-text
+    text-align: center
+    h1
+      text-transform: uppercase
+      font-weight: 700
+      font-size: 35px
+      span
+        color: $accent
+    p
+      font-weight: 500
+      font-size: 14px
+      padding-bottom: 93px
+  &-box
+    text-align: center
+    img
+      padding-bottom: 30px
+      padding-top: 35px
+    h1
+      font-size: 14px
+      padding-top: 25px
+      font-weight: 700
+    p
+      font-size: 11px
+      font-weight: 300
+      padding: 0 20px
+    & > div
+      border: 1px dotted #ebebeb
+      padding: 0
+    &-text
+      position: relative
+      overflow: hidden
+      & > div
+        transition: all ease .4s
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        position: absolute
+        transform: translateX(-100%)
+        h1
+          text-transform: uppercase
+          padding-top: 33px
+          padding-bottom: 15px
+        i
+          border: 1px solid #fff
+          border-radius: 50%
+          padding: 7px
+          color: white
+          &:hover
+            color: #503392
+            background-color: #fff
+            transition: all ease .2s
+      &:hover > div
+        background-color: #503392
+        padding: 0
+        color: white
+        transition: all ease .4s
+        transform: translateX(0)
+  /***************END CHOOSE STYLE *****************/
+.productsRow
+  background-image: url(../img/img.jpg)
+  background-position: bottom
+
+  & > div
+    background-image: -moz-linear-gradient( 161deg, rgb(0,191,243) 0%, rgb(103,58,183) 51%, rgb(92,55,165) 76%, rgb(80,51,146) 100%)
+    background-image: -webkit-linear-gradient( 161deg, rgb(0,191,243) 0%, rgb(103,58,183) 51%, rgb(92,55,165) 76%, rgb(80,51,146) 100%)
+    background-image: -ms-linear-gradient( 161deg, rgb(0,191,243) 0%, rgb(103,58,183) 51%, rgb(92,55,165) 76%, rgb(80,51,146) 100%)
+    opacity: 0.8
+
+.bgProducts
+  width: 100%
+  text-align: center
+  text-transform: uppercase
+  padding: 47px 0
+  h1
+    color: white
+    span
+      color: $accent2
+
+
+
+.productsItem
+  background-image: url(../img/bg.png)
+  padding-bottom: 120px
+  h1
+    font-size: 24px
+    font-weight: 700
+    text-transform: uppercase
+  h5
+    font-weight: 500
+    font-size: 16pt
+    color: #503392
+  p
+    font-weight: 300
+    font-size: 12px
+  .img
+    border-radius: 50%
+    width: 145px
+    height: 145px
+    background-image: url(../img/Layer-1.png)
+    -webkit-background-size: cover
+    background-size: cover
+    float: left
+    margin-right: 20px
+  & > div
+    display: inline-block
+  &-item
+    padding-top: 100px
+  .img2
+    background-image: url(../img/Layer-31.png)
+  .img3
+    background-image: url(../img/Layer-3.png)
+  .img4
+    background-image: url(../img/Layer-4.png)
+  .img5
+    background-image: url(../img/Layer-5.png)
+  .img6
+    background-image: url(../img/Layer-6.png)
+  .indicator
+    margin-bottom: -100px
+    li
+      background-color: #d7d7d7
+
+    & > .active
+        background-color: #503392
+                  /***************END CHOOSE STYLE *****************/
+.about
+  padding-top: 120px
+  &-item
+    h1
+      font-size: 35px
+      line-height: 0.686
+      font-weight: 700
+      text-transform: uppercase
+      padding-bottom: 35px
+      span
+        color: $accent
+    h5
+      font-size: 14px
+      color: rgb(153, 153, 153)
+      line-height: 1.714
+      text-align: left
+    p
+      font-size: 14px
+      color: rgb(55, 55, 55)
+      line-height: 1.714
+      text-align: left
+      padding-bottom: 70px
+  &-text
+    padding-top: 90px
+    padding-bottom: 87px
+    h1
+      text-transform: uppercase
+      font-size: 35px
+      font-weight: 700
+      text-align: center
+      span
+        color: $accent
+    p
+      text-align: center
+      font-size: 14px
+      color: rgb(153, 153, 153)
+      line-height: 1.714
+.wrapper
+  h3
+    font-size: 13px
+    font-weight: 700
+    line-height: 2
+    text-transform: uppercase
+    span
+      float: right
+
+  .line
+    height: 25px
+    min-width: 100%
+    margin: 0 10px
+    line-height: 25px
+    font-size: 14px
+    color: red
+    padding-left: 10px
+    position: relative
+    &:before
+      content: ' '
+      width: 100%
+      left: 0
+      top: 0
+      height: 9px
+      z-index: -2
+      border: 1px dotted #ebebeb
+      position: absolute
+    &:after
+      content: ''
+      margin: 3px
+      background-color: $accent
+      height: 3px
+      transition: .8s
+      display: block
+      width: 100%
+      position: absolute
+      top: 0
+      left: 0
+      z-index: -1
+    &1:after
+      max-width: 79%
+    &2:after
+      max-width: 90%
+    &3:after
+      max-width: 69%
+    &4:after
+      max-width: 92%
+  .actv:after
+    animation: animate 1 4s
+
+
+@keyframes animate
+  0%
+    width: 0
+  100%
+    width: 100%
+.about-bg
+  background-image: url(../img/about-bg.png)
+  background-repeat: no-repeat
+  background-position: right
+/***************END ABOUT STYLE *****************/
+
+
+footer
+  background-color: black
+  position: relative
+  iframe
+    position: absolute
+  .formm
+    background-color: rgba(0,0,0,0.5)
+    margin-top: 100px
+    padding-top: 85px
+    padding-bottom: 78px
+    label
+      color: #b7b7b7
+    input,
+    textarea
+      outline: none
+      background-color: rgba(0,0,0,0)
+      border-radius: 0
+      border: #9b9b9b 1px solid
+      &:focus,
+      &:active
+        background-color: rgba(0,0,0,0)
+    .btn
+      background-color: $accent2
+      color: black
+      padding: 10px 30px
+      border-radius: 0
+      border: none
+
+      float: right
+.form-right
+  p
+    color: white
+    font-size: 16px
+    line-height: 1
+footer .formm input:focus, footer .formm input:active, footer .formm textarea:focus, footer .formm textarea:active,
+footer .formm input, footer .formm textarea
+  color: #9b9b9b
+  outline: none
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle
+  color: white
+  background-color: $accent
+.theEnd
+  background-color: black
+  position: relative
+  margin-top: 100px
+  height: 60px
+  line-height: 60px
+  color: #7a7a7a
+  font-size: 17px
+  &-icons
+    a
+      float: right
+      margin-left: 20px
+      font-size: 17px
+      text-decoration: none
+      &:nth-child(1)
+        color: #e9779d
+      &:nth-child(2)
+        color: #71d6fa
+      &:nth-child(3)
+        color: #d6654e
+      &:nth-child(4)
+        color: #6782b8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
